@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+  pre_build:
+    commands:
+      - echo "pre build" 
+  build:
+    commands:
+      - echo "Build"
+      - mvn clean package
+  post_build:
+    commands:
+      - echo "Post build"
+artifacts:
+  files:
+    - target/sptest.war
