@@ -13,6 +13,7 @@ phases:
   post_build:
     commands:
       - echo "Post build"
+      - mv target/sptest.war ./
 artifacts:
   files:
-    - target/sptest.war/**/*
+    - sptest.war
