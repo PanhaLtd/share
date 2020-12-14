@@ -15,4 +15,4 @@ phases:
       - echo "Post build"
 artifacts:
   files:
-    - target/sptest.war
+    - target/sptest.war/**/*
